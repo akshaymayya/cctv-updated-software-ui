@@ -1,0 +1,234 @@
+:root {
+    --bg: #0b0b0d;
+    --panel: #0f1113;
+    --muted: #9aa1a6;
+    --accent: #E53935;
+    --glass: rgba(255, 255, 255, 0.04);
+    --card-radius: 12px;
+    --gap: 18px;
+    --ui-font: 'Outfit', system-ui, -apple-system, sans-serif;
+    --heading-font: 'Playfair Display', serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(180deg, #070709 0%, var(--bg) 100%);
+    font-family: var(--ui-font);
+    color: #e7e9ea;
+}
+
+#root {
+    height: 100vh;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+    gap: var(--gap);
+    padding: 22px;
+}
+
+/* Utility classes */
+.btn {
+    padding: 8px 10px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    color: var(--muted);
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background: var(--glass);
+    color: #fff;
+}
+
+.btn.primary {
+    background: var(--accent);
+    border: none;
+    color: #111;
+    font-weight: 600;
+}
+
+.btn.primary:hover {
+    filter: brightness(1.1);
+}
+
+.badge-status {
+    font-size: 12px;
+    padding: 6px 8px;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+.online {
+    background: rgba(76, 175, 80, 0.12);
+    color: #8ee08e;
+}
+
+.offline {
+    background: rgba(244, 67, 54, 0.08);
+    color: #ff8a80;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+:root {
+    --bg: #0b0b0d;
+    --panel: #0f1113;
+    --muted: #9aa1a6;
+    --accent: #E53935;
+    --glass: rgba(255, 255, 255, 0.04);
+    --card-radius: 12px;
+    --gap: 18px;
+    --ui-font: 'Outfit', system-ui, -apple-system, sans-serif;
+    --heading-font: 'Playfair Display', serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(180deg, #070709 0%, var(--bg) 100%);
+    font-family: var(--ui-font);
+    color: #e7e9ea;
+}
+
+#root {
+    height: 100vh;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+    gap: var(--gap);
+    padding: 22px;
+}
+
+/* Utility classes */
+.btn {
+    padding: 8px 10px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    color: var(--muted);
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background: var(--glass);
+    color: #fff;
+}
+
+.btn.primary {
+    background: var(--accent);
+    border: none;
+    color: #111;
+    font-weight: 600;
+}
+
+.btn.primary:hover {
+    filter: brightness(1.1);
+}
+
+.badge-status {
+    font-size: 12px;
+    padding: 6px 8px;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+.online {
+    background: rgba(76, 175, 80, 0.12);
+    color: #8ee08e;
+}
+
+.offline {
+    background: rgba(244, 67, 54, 0.08);
+    color: #ff8a80;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes scan {
+    0% {
+        top: 0%;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+.bounce {
+    animation: bounce 1s infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+}
